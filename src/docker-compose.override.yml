@@ -49,7 +49,6 @@ services:
       - DatabaseSettings:ConnectionString=mongodb://catalogdb:27017
     depends_on:
       - catalogdb
-      - catalogdb
     ports:
       - "8000:80"
 
