@@ -19,6 +19,8 @@ namespace Basket.API.Entities
         {
             get
             {
+                if (Items == null || Items.Count == 0)
+                    return 0;
                 decimal totalPrice = 0;
                 foreach(var item in Items)
                 {
